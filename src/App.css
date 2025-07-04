@@ -1,37 +1,48 @@
-*{
-    margin:0;
-    box-sizing: border-box;
-    color:white;
-}
-button{
-    cursor: pointer;
-}
-.main-container{
-    background-color: black;
-}
-.profile{
-    width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    padding:5px;
-    border:green 2px solid;
+@import "tailwindcss";
+@tailwind utility;
 
-}
-.profile img{
-    width: 100%;
-     border-radius: 50%;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: lightgray;
 }
 button {
-    color:black;
+  cursor: pointer;
 }
-.hobbies-section{
-    display: flex;
-    justify-content: space-around;
+.main-container {
+  background-color: black;
 }
-.hobbies-section > div{
- display: flex;
- gap:0.5rem;
- border:lightgray 1px solid;
- padding:0.5rem;
- border-radius: 10px;
+.profile {
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  border: green 2px solid;
+}
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+button {
+  color: black;
+}
+.hobbies-section {
+  display: flex;
+  justify-content: space-around;
+}
+.hobbies-section > div {
+  display: flex;
+  gap: 0.5rem;
+  border: lightgray 1px solid;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+.hobbies-section > div:hover {
+  box-shadow: 0 0 3px yellow, 0 0 6px yellow, 0 0 12px yellow, 0 0 15px yellow;
+}
+.persons {
+  min-height: 200px !important;
+}
+.persons ul li {
+  list-style: circle;
 }

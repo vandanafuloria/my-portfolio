@@ -1,5 +1,6 @@
 import Header from "./compnent/Header";
 import About from "./compnent/About";
+
 function App() {
   return (
     <>

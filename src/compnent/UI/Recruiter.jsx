@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function RecruiterSection() {
   const [copied, setCopied] = useState(false);
@@ -9,6 +11,7 @@ export default function RecruiterSection() {
     navigator.clipboard.writeText(val).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 500);
+      toast.success("Email Copied");
     });
   };
   return (
@@ -23,20 +26,16 @@ export default function RecruiterSection() {
         <li>
           Strong foundation in HTML, CSS, JavaScript, and React Familiar with
         </li>
+        <li>version control (Git), REST APIs, and basic UI/UX principles.</li>
         <li>
-          version control (Git), REST APIs, and basic UI/UX principles Eager to
+          {" "}
+          Eager to learn, collaborate, and grow in a dynamic team environment
         </li>
-        <li>learn, collaborate, and grow in a dynamic team environment</li>
       </ul>
-      <div>
-        <div
-          onClick={() => handleCopy(email)}
-          style={{ cursor: "pointer", marginTop: "1rem", color: "#007bff" }}
-        >
-          <i className="fa-solid fa-envelope"></i> {copied && email}
-          {copied && (
-            <span style={{ marginLeft: "10px", color: "green" }}>Copied!</span>
-          )}
+      <div className="flex gap-2 align-middle">
+        <div onClick={() => handleCopy(email)} style={{ cursor: "pointer" }}>
+          <i className="fa-solid fa-envelope"></i>
+          <ToastContainer position="bottom-right" autoClose={1500} />
         </div>
         <div>
           <span>
