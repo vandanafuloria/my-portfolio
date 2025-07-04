@@ -3,7 +3,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function RecruiterSection() {
-  const [copied, setCopied] = useState(false);
   const email = "vandanfuloria02@gmail.com";
 
   const handleCopy = (val) => {
@@ -32,15 +31,28 @@ export default function RecruiterSection() {
           Eager to learn, collaborate, and grow in a dynamic team environment
         </li>
       </ul>
-      <div className="flex gap-2 align-middle">
+      <div className="flex gap-4 align-middle">
         <div onClick={() => handleCopy(email)} style={{ cursor: "pointer" }}>
           <i className="fa-solid fa-envelope"></i>
           <ToastContainer position="bottom-right" autoClose={1500} />
         </div>
+
+        <span>
+          <a
+            href="https://www.linkedin.com/in/vandanafuloria/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            {" "}
+            <i class="fa-solid fa-file"></i>
+          </a>
+        </span>
+
         <div>
           <span>
             <a
-              href="https://www.linkedin.com/in/vandanafuloria/"
+              href="./resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}

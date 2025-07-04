@@ -37,9 +37,9 @@ export default function About() {
       <div className="audiance">
         <div className="flex gap-3 items-center">
           <span>For</span>
-          <Button text="Anyone" onClick={showEveryone} />
-          <Button text="Recruiter" onClick={showRecruiter} />
-          <Button text="Engineer" onClick={showEngineer} />
+          <Button text="Anyone" onClick={showEveryone} bg={everyone} />
+          <Button text="Recruiter" onClick={showRecruiter} bg={recruiter} />
+          <Button text="Engineer" onClick={showEngineer} bg={engineer} />
         </div>
 
         {/* Animate container */}
