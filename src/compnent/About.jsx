@@ -26,8 +26,8 @@ export default function About() {
   };
 
   return (
-    <section className="about border-2 rounded-2xl p-4 m-3">
-      <div>
+    <section className="about border border-gray-700 rounded-2xl p-4 m-3">
+      <div className="flex gap-4 text-pink-500 my-5">
         <span>
           <i className="fas fa-circle-info"></i>
         </span>
@@ -36,7 +36,7 @@ export default function About() {
 
       <div className="audiance">
         <div className="flex gap-3 items-center">
-          <span>For</span>
+          <span className="text-pink-500">For</span>
           <Button text="Anyone" onClick={showEveryone} bg={everyone} />
           <Button text="Recruiter" onClick={showRecruiter} bg={recruiter} />
           <Button text="Engineer" onClick={showEngineer} bg={engineer} />
@@ -54,12 +54,12 @@ export default function About() {
               }`}
             >
               <div className="anyone">
-                <i className="fa-solid fa-quote-left"></i>
-                <p className="border-l-4 border-pink-400 p-2">
+                <i className="fa-solid fa-quote-left text-2xl text-pink-700"></i>
+                <p className="border-l-4 border-pink-400 p-2 my-5 text-white">
                   The more I learn, the more I realize how much there is yet to
                   learn.
                 </p>
-                <span>Hobbies : </span>
+                <span className="text-white m py-4">Hobbies :</span>
                 <div className="hobbies-section grid grid-cols-2 gap-2 mt-2 flex-wrap">
                   <Hobby
                     icon={<i className="fa-solid fa-pen-nib"></i>}

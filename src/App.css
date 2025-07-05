@@ -12,11 +12,14 @@ body {
 button {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.713);
+  color: #ec4899;
 }
 li {
   cursor: pointer;
 }
 .main-container {
+  width: 90%;
+  margin: auto;
 }
 .header {
   color: white;
@@ -49,13 +52,30 @@ button {
 .hobbies-section > div {
   display: flex;
   gap: 0.5rem;
-  border: lightgray 1px solid;
+
   padding: 0.2rem;
   border-radius: 10px;
+  transition: all ease-in-out 0.6s;
+  cursor: pointer;
 }
 .hobbies-section > div:hover {
-  box-shadow: 0 0 3px yellow, 0 0 6px yellow, 0 0 12px yellow, 0 0 15px yellow;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px white;
 }
+.hobbies-section > div:hover i {
+  color: #ec4899;
+}
+.recruiters i,
+.engineer i {
+  transform: scale(1.3);
+  transition: ease 0.5s;
+}
+.recruiters i:hover,
+.engineer i:hover {
+  transform: scale(1.7);
+  color: #ec4899;
+}
+
 .persons {
   min-height: 200px !important;
 }

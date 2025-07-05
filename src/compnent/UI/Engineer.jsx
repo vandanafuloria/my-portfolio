@@ -1,13 +1,18 @@
 export default function Engineer() {
   return (
     <>
-      <div className="engineer">
+      <div className="engineer text-white">
         <p>
           Still figuring things out, still breaking stuff, still learning — and
           that’s the fun part. I'm always digging into basics and best
           practices, and trying to get a little better every day.
         </p>
-        <div className="flex gap-4">
+        <span>
+          If you're a developer like me, always exploring and building, feel
+          free to check out my GitHub or connect on LinkedIn. I'm open to
+          collaborations, feedback, or just a good tech chat!
+        </span>
+        <div className="flex gap-4 my-4">
           <span>
             <a
               href="./resume.pdf"

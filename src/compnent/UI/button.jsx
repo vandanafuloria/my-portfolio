@@ -4,8 +4,8 @@ export default function Button({ text, onClick, bg }) {
     <>
       <button
         className={`${
-          bg ? "bg-yellow-300" : "bg-black-300"
-        } text-blue-400 border border-gray-300 p-1.5 rounded-2xl`}
+          bg ? "bg-pink-500 text-white" : "bg-black-300 text-black"
+        } p-1.5 rounded-2xl`}
         onClick={onClick}
       >
         {text}

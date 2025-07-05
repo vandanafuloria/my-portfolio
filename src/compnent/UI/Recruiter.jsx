@@ -16,51 +16,53 @@ export default function RecruiterSection() {
   };
   return (
     <>
-      <p>
-        Frontend Developer skilled in crafting responsive, accessible, and
-        user-friendly interfaces using React, JavaScript, and modern CSS
-        frameworks. Passionate about clean design, performance, and delivering
-        intuitive user experiences.
-      </p>
-      <ul>
-        <li>
-          Strong foundation in HTML, CSS, JavaScript, and React Familiar with
-        </li>
-        <li>version control (Git), REST APIs, and basic UI/UX principles.</li>
-        <li>
-          {" "}
-          Eager to learn, collaborate, and grow in a dynamic team environment
-        </li>
-      </ul>
-      <div className="flex gap-4 align-middle">
-        <div onClick={() => handleCopy(email)} style={{ cursor: "pointer" }}>
-          <i className="fa-solid fa-envelope"></i>
-          <ToastContainer position="bottom-right" autoClose={1500} />
-        </div>
-
-        <span>
-          <a
-            href="https://www.linkedin.com/in/vandanafuloria/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
+      <div className=" recruiters text-white">
+        <p className="w-fit">
+          Frontend Developer skilled in crafting responsive, accessible, and
+          user-friendly interfaces using React, JavaScript, and modern CSS
+          frameworks. Passionate about clean design, performance, and delivering
+          intuitive user experiences.
+        </p>
+        <ul className="my-4">
+          <li>
+            Strong foundation in HTML, CSS, JavaScript, and React Familiar with
+          </li>
+          <li>version control (Git), REST APIs, and basic UI/UX principles.</li>
+          <li>
             {" "}
-            <i class="fa-solid fa-file"></i>
-          </a>
-        </span>
+            Eager to learn, collaborate, and grow in a dynamic team environment
+          </li>
+        </ul>
+        <div className="flex gap-4 align-middle">
+          <div onClick={() => handleCopy(email)} style={{ cursor: "pointer" }}>
+            <i className="fa-solid fa-envelope"></i>
+            <ToastContainer position="bottom-right" autoClose={1500} />
+          </div>
 
-        <div>
           <span>
             <a
-              href="./resume.pdf"
+              href="https://www.linkedin.com/in/vandanafuloria/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              <i className="fa-brands fa-linkedin"></i>
+              {" "}
+              <i class="fa-solid fa-file"></i>
             </a>
           </span>
+
+          <div>
+            <span>
+              <a
+                href="./resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </>
