@@ -1,14 +1,25 @@
 import profile from "../assets/vandana.png";
+import logo from "../assets/icon.jpg";
 
 export default function Header() {
   return (
     <div className="header p-3.5">
       <div className="flex justify-between">
-        {" "}
-        <div className="border-2 rounded-lg">
-          {" "}
-          <input type="search" placeholder="Search..." />
+        <div className="border-2 rounded-full w-12 h-12 overflow-hidden">
+          <img className="w-full h-full" src={logo} alt="logo" />
         </div>
+        <div className="w-1/2">
+          <nav>
+            <ul className="flex justify-between gap-2.5">
+              <li>Home</li>
+              <li>About</li>
+              <li>Project</li>
+              <li>Service</li>
+              <li> Contact</li>
+            </ul>
+          </nav>
+        </div>
+
         <div>
           <span>
             <i className="fa-solid fa-gear"></i>

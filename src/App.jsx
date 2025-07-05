@@ -1,6 +1,7 @@
 import Header from "./compnent/Header";
 import About from "./compnent/About";
 import Technology from "./compnent/Technology";
+import Contact from "./compnent/Contact";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Header />
         <About />
         <Technology />
+        <Contact />
       </div>
     </>
   );
