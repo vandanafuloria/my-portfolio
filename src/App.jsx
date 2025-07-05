@@ -3,6 +3,7 @@ import About from "./compnent/About";
 import Technology from "./compnent/Technology";
 import Contact from "./compnent/Contact";
 import Projects from "./compnent/Projects";
+import Photography from "./compnent/Photography";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <About />
         <Technology />
         <Projects />
+        <Photography />
 
         <Contact />
       </div>

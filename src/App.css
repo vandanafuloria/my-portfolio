@@ -4,28 +4,44 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  color: lightgray;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.914);
 }
 button {
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.713);
+}
+li {
+  cursor: pointer;
 }
 .main-container {
-  background-color: rgba(55, 53, 53, 0.855);
+}
+.header {
+  color: white;
+}
+.profile-container {
+  box-shadow: 5px 3px 10px #ec4899;
 }
 .profile {
-  width: 150px;
+  width: 300px;
   border-radius: 50%;
-  overflow: hidden;
-  padding: 5px;
-  border: green 2px solid;
+  box-shadow: 0 0 3px #ec4899, 0 0 6px #ec4899;
+}
+.profile:hover {
+  box-shadow: 0 0 3px #ec4899, 0 0 6px #ec4899, 0 0 10px #ec4899,
+    0 0 15px #ec4899;
 }
 .profile img {
   width: 100%;
   border-radius: 50%;
+  min-width: 150px;
 }
 button {
   color: black;
 }
+
 .hobbies-section {
   display: flex;
   justify-content: space-around;
@@ -82,4 +98,34 @@ button {
   border-radius: 10px;
   width: 100%;
   margin: auto;
+}
+.photography-section {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+  padding: 10px;
+}
+
+.photo {
+  width: 190px; /* Fixed or percentage width */
+  height: 300px; /* Ensure a defined height */
+  flex-shrink: 0; /* Prevent item from shrinking in flex */
+  border-radius: 8px;
+
+  align-content: center;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out;
+  /* cover or contain depending on preference */
+}
+.photo img :hover img {
+  transform: scale(1.2);
 }

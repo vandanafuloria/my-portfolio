@@ -2,7 +2,10 @@ import Form from "./UI/Form";
 export default function Contact() {
   return (
     <>
-      <div className="contact-section flex justify-around border border-gray-400 p-4 m-3">
+      <div
+        id="Contact"
+        className="contact-section flex justify-around border border-gray-400 p-4 m-3"
+      >
         <div className="flex-1/4">
           <h1 className="text-5xl font-bold">Contact Me</h1>
           <div className="flex flex-col gap-3">
