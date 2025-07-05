@@ -51,10 +51,10 @@ export default function Projects() {
 
   return (
     <>
-      <section className="project-section">
-        <h1>MY WORK</h1>
+      <section className="project-section border border-gray-700 my-10 p-4 rounded-2xl">
+        <h1 className="text-3xl font-bold text-pink-600">My Work</h1>
 
-        <div>
+        <div className="projects flex flex-wrap justify-start gap-10 flex-1">
           {arr.map((pro) => {
             return (
               <Project

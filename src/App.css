@@ -96,27 +96,6 @@ button {
   box-shadow: 3px 3px 10px gray;
 }
 
-.info div:first-child {
-  flex-basis: 55%;
-}
-.info div:nth-child(2) {
-  flex-basis: 40%;
-}
-
-.img {
-  max-width: 600px;
-
-  background-color: rgba(255, 255, 255, 0.355);
-}
-.img img {
-  position: relative;
-  top: 10px;
-  left: 5px;
-
-  border-radius: 10px;
-  width: 100%;
-  margin: auto;
-}
 .photography-section {
   display: flex;
   overflow-x: auto;
@@ -146,4 +125,8 @@ button {
 }
 .photo img :hover img {
   transform: scale(1.2);
+}
+
+.project-container {
+  width: 45%;
 }

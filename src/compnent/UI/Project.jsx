@@ -1,27 +1,25 @@
 export default function Project({ img, title, desc, link, keywords, id }) {
-  console.log(title, img, desc);
   return (
     <>
-      <div
-        className="info flex align-middle p-5 m-4 border justify-around"
-        style={{
-          display: id % 2 === 0 ? "flex" : "flex",
-          flexDirection: id % 2 === 0 ? "row-reverse" : "row",
-        }}
-      >
-        <div className="img rounded-2xl overflow-hidden p-4 shadow-2xl">
-          <img className="w-full" src={img} alt="img" />
-        </div>
-        <div>
-          <div className="m-5">
-            {keywords.map((key) => (
-              <span className="p-2 m-2 border rounded-2xl">{key}</span>
-            ))}
+      <div className="project-container border">
+        <div className="flex flex-col-reverse text-white">
+          <div className="img">
+            <img src={img} alt="img" />
           </div>
-          <h1 className="text-4xl font-bold">{title}</h1>
-          <p>{desc}</p>
-          <button className="border p-3 m-2 bg-red-700">
-            <a href={link}>View Project</a>
+          <div className="content p-3 flex">
+            <h1 className="text-2xl font-bold">{title}</h1>
+            <div>
+              {keywords.map((key) => (
+                <span className="border p-2 text-sm rounded-lg m-2">{key}</span>
+              ))}
+            </div>
+          </div>
+          <button className="flex gap-3 align-middle justify-center p-2">
+            {" "}
+            <i className="fa-solid fa-up-right-from-square text-sm"></i>
+            <a className="text-sm" href={link}>
+              Visit Project
+            </a>
           </button>
         </div>
       </div>

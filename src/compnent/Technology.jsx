@@ -2,7 +2,7 @@ export default function Technology() {
   return (
     <>
       <section className="Technology-section border border-gray-700 rounded-2xl m-2 p-2">
-        <h1 className="font-bold text-xl text-pink-600 p-4">
+        <h1 className="font-bold text-xl text-pink-600 p-4 md:text-2xl lg:text-3xl">
           Technologies i am familiar with
         </h1>
         <div className="tech flex justify-start flex-wrap p-4 w-9/10 m-auto gap-3">
