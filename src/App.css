@@ -83,21 +83,19 @@ button {
   list-style: circle;
 }
 .tech span {
-  width: 120px;
-  height: 120px;
-  border: 1px solid gray;
   margin: 1rem;
   text-align: center;
   border-radius: 10px;
   padding: 5px;
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.821);
+  transition: all ease-in-out 0.4s;
 }
-.tech span img {
-  width: 100px;
+.tech span:hover {
+  transform: translateY(-15px) scale(1.2);
+  box-shadow: 3px 3px 10px gray;
 }
-.tech span i {
-  font-size: 100px;
-}
+
 .info div:first-child {
   flex-basis: 55%;
 }
