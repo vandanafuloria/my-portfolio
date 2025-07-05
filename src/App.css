@@ -46,3 +46,19 @@ button {
 .persons ul li {
   list-style: circle;
 }
+.tech span {
+  width: 120px;
+  height: 120px;
+  border: 1px solid gray;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.821);
+}
+.tech span img {
+  width: 100px;
+}
+.tech span i {
+  font-size: 100px;
+}

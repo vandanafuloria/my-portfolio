@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function RecruiterSection() {
+  const [copied, setCopied] = useState(false);
   const email = "vandanfuloria02@gmail.com";
 
   const handleCopy = (val) => {
