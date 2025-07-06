@@ -126,7 +126,9 @@ button {
 .photo img :hover img {
   transform: scale(1.2);
 }
-
-.project-container {
-  width: 45%;
+.project-header {
+  background: linear-gradient(135deg, #0f105c, #1f0e46);
+}
+.project {
+  width: 100%;
 }

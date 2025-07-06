@@ -1,26 +1,53 @@
-export default function Project({ img, title, desc, link, keywords, id }) {
+export default function Project({
+  img,
+  title,
+  desc,
+  link,
+  about,
+  keywords,
+  id,
+}) {
+  console.log(about);
   return (
     <>
-      <div className="project-container border">
-        <div className="flex flex-col-reverse text-white">
-          <div className="img">
-            <img src={img} alt="img" />
+      <div
+        style={{ minWidth: "200px" }}
+        className="project-container border w-full overflow-hidden cursor-pointer sm:w-1/2 md:w-1/4  bg-black rounded-2xl border-gray-600"
+      >
+        <div className="project-header p-3">
+          <h1 className="text-xl font-bold text-white">{title}</h1>
+          <div className="flex flex-wrap m-2">
+            {keywords.map((key) => (
+              <span className="bg-gray-700 text-xs p-0.5 rounded-lg mx-1 text-gray-300 cursor-pointer">
+                {key}
+              </span>
+            ))}
           </div>
-          <div className="content p-3 flex">
-            <h1 className="text-2xl font-bold">{title}</h1>
-            <div>
-              {keywords.map((key) => (
-                <span className="border p-2 text-sm rounded-lg m-2">{key}</span>
-              ))}
-            </div>
-          </div>
-          <button className="flex gap-3 align-middle justify-center p-2">
+        </div>
+        <div className="project-img p-3 h-[200px]">
+          {/* <iframe src={link} frameborder="0"></iframe> */}
+          <img className="h-full" src={img} alt="img" />
+        </div>
+        <div className="project-detail">
+          {/* <p className="text-white font-sans">{desc}</p> */}
+
+          <div className="flex justify-between my-3 p-2 gap-2">
             {" "}
-            <i className="fa-solid fa-up-right-from-square text-sm"></i>
-            <a className="text-sm" href={link}>
-              Visit Project
+            <div className="flex gap-2 items-center">
+              {" "}
+              <span className="w-3 h-3 bg-green-500 rounded-full inline-block"></span>
+              <span className="text-green-500">
+                {" "}
+                <a href={link}>Live</a>
+              </span>
+            </div>
+            <a
+              href={about}
+              className="text-sm text-gray-100 bg-pink-600 border border-gray-600 rounded-xl p-1"
+            >
+              View Project
             </a>
-          </button>
+          </div>
         </div>
       </div>
     </>

@@ -13,6 +13,7 @@ export default function Projects() {
       img: main,
       desc: "🛒 E-Market – A responsive shopping app with product listings, category filters, search, pagination, cart, liked items, and product detail pages.",
       link: "https://e-market-blush.vercel.app/",
+      about: "https://github.com/vandanafuloria/e-market",
       keyword: ["e-market", "React"],
     },
     {
@@ -21,7 +22,8 @@ export default function Projects() {
       img: weather,
       desc: "A simple weather application, that gets weather of any country, city or village around the globe",
       link: "https://vandanafuloria.github.io/weather-forecast/",
-      keyword: ["vanilla js", "openweatherapi", "Weahter forcast"],
+      about: "https://github.com/vandanafuloria/weather-forecast",
+      keyword: ["vanilla js", "Weahter forcast"],
     },
     {
       id: 3,
@@ -29,14 +31,16 @@ export default function Projects() {
       img: ss1,
       desc: "Restaurant page, which focus on rendering pages according to click on a single page, with nice responsive design",
       link: "https://vandanafuloria.github.io/restuarant/",
+      about: "https://github.com/vandanafuloria/restuarant",
       keyword: ["design", "vanila js", "UI"],
     },
     {
       id: 4,
       title: "Resume Builder",
       img: cv,
-      desc: "CV Builder is a web-based resume generator that allows users to create, edit, and preview their CVs in real-time. It features a clean interface and instant preview functionality, ideal for users looking to craft professional resumes quickly and efficiently.",
+      desc: "CV Builder is a web-based resume generator that allows users to create, edit, and preview their CVs in real-time. .",
       link: "vandanafuloria.github.io/CV-builder-/",
+      about: "https://github.com/vandanafuloria/CV-builder-",
       keyword: ["CV-builder", "Live-preview", "React"],
     },
     {
@@ -45,16 +49,17 @@ export default function Projects() {
       img: memory,
       desc: "A fun and interactive memory matching game built to sharpen focus and recall. Developed using React and CSS.",
       link: "https://vandanafuloria.github.io/play-with-memory/",
+      about: "https://github.com/vandanafuloria/play-with-memory",
       keyword: ["Game", "Memory", "React"],
     },
   ];
 
   return (
     <>
-      <section className="project-section border border-gray-700 my-10 p-4 rounded-2xl">
+      <section className="project-section  w-fullborder border-gray-700 my-5 p-2 rounded-2xl">
         <h1 className="text-3xl font-bold text-pink-600">My Work</h1>
 
-        <div className="projects flex flex-wrap justify-start gap-10 flex-1">
+        <div className="projects flex justify-around gap-7 md:justify-center flex-wrap">
           {arr.map((pro) => {
             return (
               <Project
@@ -64,6 +69,7 @@ export default function Projects() {
                 link={pro.link}
                 keywords={pro.keyword}
                 id={pro.id}
+                about={pro.about}
               />
             );
           })}
