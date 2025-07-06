@@ -1,12 +1,12 @@
 import profile from "../assets/vandana.png";
-import logo from "../assets/icon.jpg";
+import logo from "../assets/peng.png";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Header() {
   return (
     <div className="header p-3.5 ">
       <div className="flex justify-between">
-        <div className="border  rounded-full w-12 h-12 overflow-hidden">
+        <div className="border  rounded-full w-12 h-12 overflow-hidden bg-white">
           <img className="w-full h-full" src={logo} alt="logo" />
         </div>
         <div className="w-3/4 md:w-2/4">

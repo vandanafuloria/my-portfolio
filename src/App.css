@@ -30,11 +30,9 @@ li {
 .profile {
   width: 300px;
   border-radius: 50%;
-  box-shadow: 0 0 3px #ec4899, 0 0 6px #ec4899;
 }
 .profile:hover {
-  box-shadow: 0 0 3px #ec4899, 0 0 6px #ec4899, 0 0 10px #ec4899,
-    0 0 15px #ec4899;
+  box-shadow: 0 0 3px #ec4899, 0 0 6px #ec4899;
 }
 .profile img {
   width: 100%;
@@ -100,15 +98,18 @@ button {
 }
 
 .photo {
+  height: 70%;
 }
 
 .photo img {
   width: 100%;
   height: 100%;
+
   transform: scale(0.9);
   box-shadow: 0 0 5px white;
 
   transition: all ease-in-out 1s;
+
   /* cover or contain depending on preference */
 }
 .photo:hover img {
@@ -119,4 +120,23 @@ button {
 }
 .project {
   width: 100%;
+}
+.icons i {
+  transition: ease-in-out 0.5s;
+}
+.icons i:hover {
+  color: #ec4899;
+  transform: scale(1.2);
+}
+.form {
+  background-color: rgba(0, 0, 0, 0.659);
+}
+.form input,
+textarea {
+  outline: 0;
+  border: gray solid 1px;
+}
+.form input:focus,
+.form textarea:focus {
+  border: #ec4899 1px solid;
 }
