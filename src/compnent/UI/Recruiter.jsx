@@ -16,7 +16,7 @@ export default function RecruiterSection() {
   };
   return (
     <>
-      <div className=" recruiters text-white">
+      <div className=" recruiters ">
         <p className="w-fit">
           Frontend Developer skilled in crafting responsive, accessible, and
           user-friendly interfaces using React, JavaScript, and modern CSS
@@ -35,7 +35,7 @@ export default function RecruiterSection() {
         </ul>
         <div className="flex gap-4 align-middle">
           <div onClick={() => handleCopy(email)} style={{ cursor: "pointer" }}>
-            <i className="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope md:text-2xl"></i>
             <ToastContainer position="bottom-right" autoClose={1500} />
           </div>
 
@@ -47,7 +47,7 @@ export default function RecruiterSection() {
               style={{ textDecoration: "none", color: "inherit" }}
             >
               {" "}
-              <i class="fa-solid fa-file"></i>
+              <i class=" icons fa-solid fa-file md:text-2xl"></i>
             </a>
           </span>
 
@@ -59,7 +59,7 @@ export default function RecruiterSection() {
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin md:text-2xl"></i>
               </a>
             </span>
           </div>

@@ -1,11 +1,14 @@
 export default function Technology() {
   return (
     <>
-      <section className="Technology-section border border-gray-700 rounded-2xl m-2 p-2">
+      <section
+        id="Services"
+        className="Technology-section border border-gray-700 rounded-2xl m-2 p-2"
+      >
         <h1 className="font-bold text-xl text-pink-600 p-4 md:text-2xl lg:text-3xl">
-          Technologies i am familiar with
+          Technologies I am familiar with
         </h1>
-        <div className="tech flex justify-start flex-wrap p-4  m-auto gap-3">
+        <div className="tech flex justify-center flex-wrap p-4  m-auto gap-3 ">
           <span className="w-10 md:w-20 border-red-500 border hover:shadow-lg shadow-pink-800">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"

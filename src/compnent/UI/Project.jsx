@@ -12,7 +12,7 @@ export default function Project({
     <>
       <div
         style={{ minWidth: "200px" }}
-        className="project-container border w-full overflow-hidden cursor-pointer sm:w-1/2 md:w-1/4  bg-black rounded-2xl border-gray-600"
+        className="project-card project-container border w-full overflow-hidden cursor-pointer sm:w-1/2 md:w-1/4  bg-black rounded-2xl border-gray-600"
       >
         <div className="project-header p-3">
           <h1 className="text-xl font-bold text-white">{title}</h1>

@@ -2,6 +2,13 @@ export default function Form() {
   return (
     <>
       <div className="form flex-3/4 border border-gray-700 p-5 rounded-2xl">
+        <h1 className="text-white flex gap-3 mb-3">
+          {" "}
+          <span>
+            <i class="fa-solid fa-paper-plane text-pink-600"></i>
+          </span>
+          <span className="text-xl font-bold"> Send me a Message</span>
+        </h1>
         <form action="" className="flex flex-col gap-4">
           <fieldset>
             <input

@@ -6,33 +6,33 @@ export default function Header() {
   return (
     <div className="header p-3.5 ">
       <div className="flex justify-between">
-        <div className="border  rounded-full w-12 h-12 overflow-hidden bg-white">
-          <img className="w-full h-full" src={logo} alt="logo" />
+        <div className="border  rounded-full w-5 h-5  overflow-hidden bg-white">
+          <img className="" src={logo} alt="logo" />
         </div>
-        <div className="w-3/4 md:w-2/4">
+        <div className="w-full md:w-2/4">
           <nav>
-            <ul className="flex justify-around gap-3 text-sm sm:text-sm">
-              <li className="hover:text-pink-500">Home</li>
-              <li className="hover:text-pink-500">About</li>
-              <li className="hover:text-pink-500">Project</li>
-              <li className="hover:text-pink-500">Service</li>
-              <li className="hover:text-pink-600">
+            <ul className="flex justify-around gap-2.5 text-sm sm:text-sm md:text-lg">
+              <li className="hover:text-pink-500 slide-in delay-1">Home</li>
+              <li className="hover:text-pink-500 slide-in delay-2">
+                <a href="#About"> About</a>
+              </li>
+              <li className="hover:text-pink-500 slide-in delay-3">
+                <a href="#Project"> Projects</a>
+              </li>
+              <li className="hover:text-pink-500 slide-in delay-4">
+                <a href="#Services">Services</a>
+              </li>
+              <li className="hover:text-pink-600 slide-in delay-5">
                 <a href="#Contact">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
-
-        <div>
-          <span>
-            <i className="fa-solid fa-gear"></i>
-          </span>
-        </div>
       </div>
 
       <div className="profile-container border border-gray-700 rounded-2xl m-3 my-5 p-5 flex flex-row-reverse justify-around gap-4 text-center  flex-wrap lg:text-left ">
         <div className="profile">
-          <img src={profile} alt="" />
+          <img src={profile} draggable={false} />
         </div>
         <div className="flex flex-col gap-3 ">
           <h1 className="font-bold text-lg md:text-2xl lg:text-4xl">
@@ -65,19 +65,27 @@ export default function Header() {
           </h4>
 
           <div className="flex gap-4 my-3 m-auto sm:m-auto lg:m-0">
-            <button className="flex gap-x-2 border rounded-lg p-2 align-middle">
-              <span>
-                <i className="fa-solid fa-file"></i>
-              </span>
-              <span className="text-sm"> Resume</span>
-            </button>
-            <button className="flex gap-x-2 border rounded-lg p-2 align-middle">
-              {" "}
-              <span>
-                <i className="fa-regular fa-address-book"></i>
-              </span>
-              <span className="text-sm"> Contact Me</span>
-            </button>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <button className="flex gap-x-2 border rounded-lg p-2 align-middle">
+                <span>
+                  <i className="fa-solid fa-file"></i>
+                </span>
+                <span className="text-sm">Resume</span>
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vandanafuloria/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="flex gap-x-2 border rounded-lg p-2 align-middle">
+                {" "}
+                <span>
+                  <i className="fa-regular fa-address-book"></i>
+                </span>
+                <span className="text-sm"> Contact Me</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>

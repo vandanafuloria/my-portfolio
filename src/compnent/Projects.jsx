@@ -4,6 +4,8 @@ import cv from "../assets/cv.png";
 import weather from "../assets/desktop-light.png";
 import memory from "../assets/image.png";
 import Project from "./UI/Project";
+import car from "../assets/car.png";
+import Extra from "./AdditionalProjects";
 
 export default function Projects() {
   const arr = [
@@ -52,14 +54,28 @@ export default function Projects() {
       about: "https://github.com/vandanafuloria/play-with-memory",
       keyword: ["Game", "Memory", "React"],
     },
+    {
+      id: 6,
+      title: "carBazar",
+      img: car,
+      desc: "Car bazar is a project focused on jwt authantication and page navigation, wiht nice visaul apreal",
+      link: "",
+      about: "",
+      keyword: ["Car website", "JWT Authantication"],
+    },
   ];
 
   return (
     <>
-      <section className="project-section  w-fullborder border-gray-700 my-5 p-2 rounded-2xl">
-        <h1 className="text-3xl font-bold text-pink-600">My Work</h1>
+      <section
+        id="Project"
+        className="project-section  w-fullborder border-gray-700 my-5 p-2 rounded-2xl"
+      >
+        <h1 className="text-3xl font-bold text-pink-600 px-4 py-2 my-4">
+          My Projects
+        </h1>
 
-        <div className="projects flex justify-around gap-7 md:justify-center flex-wrap">
+        <div className="projects flex justify-around gap-10 md:justify-center flex-wrap">
           {arr.map((pro) => {
             return (
               <Project
@@ -74,6 +90,8 @@ export default function Projects() {
             );
           })}
         </div>
+
+        <Extra />
       </section>
     </>
   );

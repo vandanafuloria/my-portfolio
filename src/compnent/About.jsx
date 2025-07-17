@@ -26,7 +26,10 @@ export default function About() {
   };
 
   return (
-    <section className="about border border-gray-700 rounded-2xl p-4 m-3">
+    <section
+      id="About"
+      className="about border border-gray-700 rounded-2xl p-4 m-3 italic text-gray-400"
+    >
       <div className="flex gap-4 text-pink-500 my-5">
         <span>
           <i className="fas fa-circle-info"></i>
@@ -46,16 +49,10 @@ export default function About() {
         <div className="persons p-3 m-1  ">
           {/* Anyone Section */}
           {everyone && (
-            <div
-              className={`transition-all duration-500 transform ${
-                everyone
-                  ? "opacity-100 scale-100"
-                  : "opacity-0 scale-80 pointer-events-none"
-              }`}
-            >
+            <div className="everyone">
               <div className="anyone">
                 <i className="fa-solid fa-quote-left text-2xl text-pink-700"></i>
-                <p className="border-l-4 border-pink-400 p-2 my-5 text-white">
+                <p className="border-l-4 border-pink-400 p-2 my-5">
                   The more I learn, the more I realize how much there is yet to
                   learn.
                 </p>
@@ -88,26 +85,14 @@ export default function About() {
 
           {/* Recruiter Section */}
           {recruiter && (
-            <div
-              className={`transition-all duration-500 transform ${
-                recruiter
-                  ? "opacity-100 scale-100"
-                  : "opacity-0 scale-90 pointer-events-none"
-              }`}
-            >
+            <div className="everyone recruiter">
               <RecruiterSection />
             </div>
           )}
 
           {/* Engineer Section */}
           {engineer && (
-            <div
-              className={` w-full transition-all duration-500 transform ${
-                engineer
-                  ? "opacity-100 scale-100"
-                  : "opacity-0 scale-90 pointer-events-none"
-              }`}
-            >
+            <div className="engineer everyone">
               <Engineer />
             </div>
           )}

@@ -1,7 +1,7 @@
 export default function Engineer() {
   return (
     <>
-      <div className="engineer text-white">
+      <div className="engineer">
         <p>
           Still figuring things out, still breaking stuff, still learning — and
           that’s the fun part. I'm always digging into basics and best
