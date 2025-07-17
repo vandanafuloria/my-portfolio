@@ -2,6 +2,8 @@
 
 This is my personal developer portfolio built using React, Vite, and Tailwind CSS with a custom dark-only theme. It highlights my skills, technologies I've worked with, and both major and additional projects. The site includes a downloadable resume and LinkedIn contact link.
 
+  <img src="./src/assets/ss.png" >
+
 ## Features
 
 - Built with React (component-based architecture)

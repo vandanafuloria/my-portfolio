@@ -1,9 +1,9 @@
-import Header from "./compnent/Header";
-import About from "./compnent/About";
-import Technology from "./compnent/Technology";
-import Contact from "./compnent/Contact";
-import Projects from "./compnent/Projects";
-import Photography from "./compnent/Photography";
+import Header from "./component/Header";
+import About from "./component/About";
+import Technology from "./component/Technology";
+import Contact from "./component/Contact";
+import Projects from "./component/Projects";
+import Photography from "./component/Photography";
 
 function App() {
   return (

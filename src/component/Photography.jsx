@@ -1,4 +1,4 @@
-import Photo from "../compnent/UI/Photo";
+import Photo from "./UI/Photo";
 export default function Photography() {
   return (
     <>
