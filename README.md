@@ -44,5 +44,5 @@ Resume is included in the project under the `assets` folder and can be viewed or
 
 ## Contact
 
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/vandanafuloria)
+- LinkedIn: [LinkedIn Profile](https://linkedin.com/in/vandanafuloria)
 - Email: vandanafuloria@02gmail.com
