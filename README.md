@@ -36,7 +36,7 @@ This is my personal developer portfolio built using React, Vite, and Tailwind CS
 
 ## Demo
 
-### 👉 [Live Preview ]("https://my-portfolio-l31n.vercel.app/")
+### 👉 [Live Preview](https://my-portfolio-l31n.vercel.app)
 
 ## Resume
 
