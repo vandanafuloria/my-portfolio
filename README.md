@@ -36,7 +36,7 @@ This is my personal developer portfolio built using React, Vite, and Tailwind CS
 
 ## Demo
 
-### 👉 [Live Preview ](my-portfolio-1iyl-1au6vfc8e-vandana-fulorias-projects.vercel.app)
+### 👉 [Live Preview ]("my-portfolio-1iyl.vercel.app")
 
 ## Resume
 
