@@ -1,12 +1,46 @@
-# React + Vite
+# Personal Portfolio – Vandana Fuloria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio built using React, Vite, and Tailwind CSS with a custom dark-only theme. It highlights my skills, technologies I've worked with, and both major and additional projects. The site includes a downloadable resume and LinkedIn contact link.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Built with React (component-based architecture)
 
-## Expanding the ESLint configuration
+- Uses Vite for fast development and builds
+- Styled with Tailwind CSS (dark theme only)
+- Responsive design for all screen sizes
+- Displays major and additional project sections
+- Resume available for download/view
+- Contact section with LinkedIn link
+- Clean and modular code structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Sections
+
+- Header
+- Hero / Main Section
+
+- About Me
+- Technologies
+- Projects
+- Additional Projects
+- Contact
+
+## Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- Font Awesome (for icons)
+
+## Demo
+
+Example: `https://yourusername.vercel.app/`
+
+## Resume
+
+Resume is included in the project under the `assets` folder and can be viewed or downloaded from the site via a button.
+
+## Contact
+
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/vandanafuloria)
+- Email: vandanafuloria@02gmail.com
