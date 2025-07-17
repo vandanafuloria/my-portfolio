@@ -4,6 +4,7 @@ import Technology from "./component/Technology";
 import Contact from "./component/Contact";
 import Projects from "./component/Projects";
 import Photography from "./component/Photography";
+import Footer from "./component/UI/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Photography />
 
         <Contact />
+        <Footer />
       </div>
     </>
   );

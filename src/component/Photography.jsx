@@ -2,11 +2,11 @@ import Photo from "./UI/Photo";
 export default function Photography() {
   return (
     <>
-      <div className="border border-gray-700 rounded-2xl p-5">
+      <div className="border border-gray-700 rounded-2xl p-5 pb-10">
         <h1 className="text-2xl font-bold text-pink-600 m-3 md:text-4xl">
           Achievements
         </h1>
-        <div className="photography-section flex gap-3 flex-wrap justify-center md:gap-5">
+        <div className="photography-section flex flex-row gap-3 flex-wrap justify-center md:gap-5">
           <Photo
             title="Qualified GATE Exam"
             description="Cleared the GATE (Graduate Aptitude Test in Engineering), in Biotechnology and Life Sciences."

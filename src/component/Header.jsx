@@ -66,7 +66,7 @@ export default function Header() {
 
           <div className="flex gap-4 my-3 m-auto sm:m-auto lg:m-0">
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <button className="flex gap-x-2 border rounded-lg p-2 align-middle">
+              <button className="flex gap-x-2  rounded-lg p-2 align-middle">
                 <span>
                   <i className="fa-solid fa-file"></i>
                 </span>
@@ -78,7 +78,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="flex gap-x-2 border rounded-lg p-2 align-middle">
+              <button className="flex gap-x-2 rounded-lg p-2 align-middle">
                 {" "}
                 <span>
                   <i className="fa-regular fa-address-book"></i>

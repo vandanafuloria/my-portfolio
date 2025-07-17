@@ -18,6 +18,7 @@ li {
   cursor: pointer;
 }
 .main-container {
+  width: 95%;
   margin: auto;
 }
 .header {
@@ -247,4 +248,9 @@ li:hover::after {
   box-shadow: 0 0 5px white;
   background-color: rgba(64, 9, 48, 0.601);
   transform: translateX(10px);
+}
+button:hover {
+  box-shadow: 0 0 3px #de0c75, 0 0 6px #de0c75, 0 0 10px #de0c75;
+  background-color: #de0c75;
+  color: white;
 }
