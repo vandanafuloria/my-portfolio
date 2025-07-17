@@ -41,7 +41,7 @@ export default function Projects() {
       title: "Resume Builder",
       img: cv,
       desc: "CV Builder is a web-based resume generator that allows users to create, edit, and preview their CVs in real-time. .",
-      link: "vandanafuloria.github.io/CV-builder-/",
+      link: "https://vandanafuloria.github.io/CV-builder-/",
       about: "https://github.com/vandanafuloria/CV-builder-",
       keyword: ["CV-builder", "Live-preview", "React"],
     },
