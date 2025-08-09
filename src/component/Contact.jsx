@@ -32,7 +32,7 @@ export default function Contact() {
               </span>
 
               <span>
-                <a href="'https://github.com/vandanafuloria">
+                <a href="https://github.com/vandanafuloria">
                   <i class="icon fa-brands fa-square-github text-4xl"></i>
                 </a>
               </span>
